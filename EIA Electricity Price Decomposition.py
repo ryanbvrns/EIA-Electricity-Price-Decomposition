@@ -34,7 +34,7 @@ def decompose_time_series(series):
     plt.show()
 
 # Make the API request and load the data into a DataFrame
-api_key = 'rooE5ldGrt0kpkyBzO5TixzjTBQApVhYRULQ7It8'
+api_key = 'API_Key_Here'
 api_url = 'https://api.eia.gov/v2/electricity/retail-sales/data/?frequency=monthly&data[0]=price&facets[sectorid][]=ALL&facets[stateid][]=US&sort[0][column]=period&sort[0][direction]=desc&offset=0&length=5000'
 api_url = f'{api_url}&api_key={api_key}'
 df = retrieve_time_series(api_key, api_url) 
